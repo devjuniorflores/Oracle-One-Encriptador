@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="css/encriptador.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Kanit:ital,wght@1,300&family=Orelega+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@300&family=Kanit:ital,wght@1,300&family=Orelega+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Caveat:wght@700&family=Inter:wght@300&family=Kanit:ital,wght@1,300&family=Orelega+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+            <header>
+                <h1><img src="imagenes/Logo.png" class="logo"></h1>
+            </header>
+
+            <div class="caja_principal">
+                <textarea id="caja_texto" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <h3 class="advertencia">⚠️Solo letras minúsculas y sin acentos</h3>
+
+            
+                <div class="botones">
+                    <button id="botonEncriptar" class="boton-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button id="botonDesencriptar" class="boton-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+            </div>
+            
+            <div class="texto-imagen">
+                <img src="imagenes/Muñeco.png" alt="munheco_1" class="munheco">
+                    <h2 class="mensaje_1" id="mensajeSalida">Ningún mensaje fue encontrado</h2>
+                    <p class="mensajeTextoVacio">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <textarea id="salidaTexto" readonly></textarea>
+                    <button id="botonCopiar" class="boton-copiar" onclick="copiar()" >Copiar</button>
+            </div>
+            
+            <footer>
+                <p>© Copyright 2022 | Junior Flores - Alura LATAM</p>
+            </footer>
+            <script src="js/encriptador.js"></script>
+    </body>
+</html>
+
+
+
